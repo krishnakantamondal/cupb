@@ -17,7 +17,7 @@ for(i=0;i<=n-1;i++)
 { 
 sumx=sumx +x[i];  sumx2=sumx2 +x[i]*x[i];  sumy=sumy +y[i];  sumxy=sumxy +x[i]*y[i]; 
 } 
- a=((sumx2*sumysumx*sumxy)*1.0/(n*sumx2sumx*sumx)*1);  
+ a=((sumx2*sumy-sumx*sumxy)*1.0/(n*sumx2-sumx*sumx)*1);  
 b=((n*sumxy-sumx*sumy)*1.0/(n*sumx2-sumx*sumx)*1.0);  printf("\n\nThe line is Y=%3.3f +%3.3f X",a,b);  
 return(0); 
 } 
